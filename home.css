@@ -1,0 +1,33 @@
+/* Variables Colores */
+:root {
+    --dark-grey: #212025;
+    --mid-grey: #2e2d30;
+}
+
+/* Opciones Principales Body */
+body {
+    background-color: var(--dark-grey);
+}
+
+li{
+    flex-basis: 50%;
+    align-items: baseline;
+    height: 30%;
+    justify-content: space-between;
+    text-align: center;
+    list-style-type: none;
+    background: var(--mid-grey)
+}
+
+li a {
+    font-family: sans-serif;
+    color: black;
+    padding: 8px;
+    width: 100%;
+    text-decoration: none;
+}
+ul {
+    padding: 0%;
+    display: flex;
+    justify-content: space-evenly;
+}
