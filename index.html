@@ -10,6 +10,8 @@
     <link id="icon" rel="icon" type="image/x-icon" href="img/logo_02.png">
     <!-- Link de la Pagina de Estilos -->
     <link rel="stylesheet" href="home.css">
+    <!-- Link de los Iconos -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Paginas de icon TablerIcon, FlatIcon -->
 </head>
@@ -19,16 +21,44 @@
     <header>
 
         <!-- Etiqueta del Menu -->
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Eventos </a></li>
-                <li><a href="#">ShowRooms</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#"><input type="checkbox"></a></li>
-            </ul>
-        </nav>
+        <div class="container">
+
+            <aside class="sidebar">
+
+                <!-- Contenedor del logo/nombre -->
+                <div class="logo">
+                    <img src="img/main_logo_sinfondo.png" alt="">
+                    <a href="#">EventX</a>
+                </div>
+
+                <!-- Menu -->
+                <nav class="menu">
+                    <h5>Menu</h5>
+                    <ul>
+                        <li>
+                            <i class='bx bxs-megaphone'></i>
+                            <a href="#">Eventos</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-home-smile' ></i>
+                            <a href="#">ShowRooms</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-envelope' ></i>
+                            <a href="#">Contacto</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-group' ></i>
+                            <a href="#">Sobre Nosotros</a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+
+            </aside>
+
+        </div>
         
     </header>
 
