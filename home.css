@@ -6,7 +6,7 @@
     --dark-grey: #050505;    
     --mid-grey: #18181d;
     --light-grey: #919191;
-    --purple: #5773ff;
+    --purple: #7549C8;
     --font-color: white;
 }
 
@@ -56,7 +56,6 @@ body{
     padding: 20px 36px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     z-index: 1000;
     transition: all 0.6 ease;
 }
@@ -85,7 +84,8 @@ body{
 .container .sidebar .logo a:hover,
 .container .sidebar .menu ul li:hover a,
 .container .sidebar .menu ul li:hover i,
-.container main header .nav-links a:hover{
+.container main header .nav-links a:hover,
+.container .right-section .profile i:hover{
     color: var(--purple);
     transition: all 0.3s ease;
 }
@@ -163,6 +163,69 @@ body{
     outline: none;
     color: var(--font-color);
 }
+/* ------------------------------------------------------------------------------------- */
+
+/* Contenedor Trajetas */
+.container main .card-container{
+    margin-top: 40px;
+}
+
+/* Estilo Tarjeta */
+.container main .card-container .card{
+    display: flex;
+    background-color: #25252d;
+    border-radius: 6px;
+    padding: 13px;
+    color: var(--font-color);
+    margin-bottom: 20px;
+}
+
+/* Contenedor Izquierdo Tarjeta */
+.container main .card-container .card .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+}
+
+/* Elementos Izquierda Tarjeta */
+.container main .card-container .card .left > div{
+    height: max-content;
+}
+
+.container main .card-container .card .left > div{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Titulo Tarjeta */
+.container main .card-container .card .left h1{
+    color: var(--purple);
+}
+
+/* Boton Tarjeta */
+.container main .card-container .card .left button{
+    width: max-content;
+    padding: 10px 25px;
+    background-color: var(--purple);
+    color: var(--font-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.container main .card-container .card .left button:hover{
+    scale: 1.03;
+}
+
+/* Imagen Tarjeta */
+.container main .card-container .card .right img{
+    width: 300px;
+    height: 300px;
+}
+
 
 /* ------------------------------------------------------------------------------------- */
 
@@ -178,6 +241,7 @@ body{
     justify-content: flex-end;
     gap: 18px;
     margin-bottom: 40px;
+    cursor: pointer;
 }
 
 /* Contenedor Usuario */
@@ -215,11 +279,24 @@ body{
     background-color: #25252d;
     border-radius: 6px;
     padding: 13px;
+    height: 72vh;
+    justify-content: space-between;
 }
 
 /* Contenedor Review */
 .container .right-section .review-container .review{
     display: flex;
+    background-color: #32323d;
+    padding: 13px;
+    border-radius: 6px;
+    color: var(--font-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover Review */
+.container .right-section .review-container .review:hover{
+    scale: 1.02;
 }
 
 /* Review Info */
@@ -232,8 +309,14 @@ body{
     padding: 10px 0 10px 0;
 }
 
+/* Estilo Estrellas */
 .container .right-section .review-container .review .right .stars i{
     color: gold;
+}
+
+/* Estilo Estrellas */
+.container .right-section .review-container .review .right p{
+    font-size: 14px;
 }
 
 /* Imagen Review */
@@ -241,3 +324,4 @@ body{
     width: 50px;
     height: 50px;
 }
+
