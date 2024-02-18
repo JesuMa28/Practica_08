@@ -17,50 +17,75 @@
 </head>
 <body>
 
-    <!-- Cabecera de la Pagina -->
-    <header>
+    <!-- Contenedor Pirncipal -->
+    <div class="container">
 
-        <!-- Etiqueta del Menu -->
-        <div class="container">
+        <!-- Contenedor Menu Lateral-->
+        <aside class="sidebar">
 
-            <aside class="sidebar">
+            <!-- Contenedor del logo/nombre -->
+            <div class="logo">
+                <img src="img/main_logo_sinfondo.png" alt="">
+                <a href="#">EventX</a>
+            </div>
 
-                <!-- Contenedor del logo/nombre -->
-                <div class="logo">
-                    <img src="img/main_logo_sinfondo.png" alt="">
-                    <a href="#">EventX</a>
+            <!-- Menu -->
+            <nav class="menu">
+                <h5>Menu</h5>
+                <ul>
+                    <li>
+                        <i class='bx bxs-megaphone'></i>
+                        <a href="#">Eventos</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-home-smile' ></i>
+                        <a href="#">ShowRooms</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-envelope' ></i>
+                        <a href="#">Contacto</a>
+                    </li>
+                    <li>
+                        <i class='bx bxs-group' ></i>
+                        <a href="#">About Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </aside>
+
+        <!-- Contenedor Main -->
+        <main>
+
+            <!-- Cabecera -->
+            <header>
+                <!-- Menu Superior -->
+                <div class="nav-links">
+                    <a href="#">Eventos</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Reseñas</a>
                 </div>
+                <!-- Barra Busqueda -->
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Comienza a escribir...">
+                </div>
+            </header>
 
-                <!-- Menu -->
-                <nav class="menu">
-                    <h5>Menu</h5>
-                    <ul>
-                        <li>
-                            <i class='bx bxs-megaphone'></i>
-                            <a href="#">Eventos</a>
-                        </li>
-                        <li>
-                            <i class='bx bxs-home-smile' ></i>
-                            <a href="#">ShowRooms</a>
-                        </li>
-                        <li>
-                            <i class='bx bxs-envelope' ></i>
-                            <a href="#">Contacto</a>
-                        </li>
-                        <li>
-                            <i class='bx bxs-group' ></i>
-                            <a href="#">Sobre Nosotros</a>
-                        </li>
-                    </ul>
-                </nav>
+        </main>
 
+        <!-- Seccion Derecha -->
+        <section class="right-section">
 
+            <!-- Parte Inicio Sesion -->
+            <div class="profile">
+                <i class='bx bxs-bell'></i>
+                <i class='bx bxs-cog' ></i>
+            </div>
 
-            </aside>
+        </section>
 
-        </div>
-        
-    </header>
+    </div>
 
     <!-- Contenedor Principal -->
     <main>
