@@ -242,7 +242,10 @@ body{
 .container main .card-container .card:nth-child(3) .right img{
     width: 150px;
     height: 150px;
-    margin: 3px;
+}
+
+.container main .card-container .card .right .img-row:nth-child(2){
+    margin-left: 4px;
 }
 
 
@@ -298,8 +301,29 @@ body{
     background-color: #25252d;
     border-radius: 6px;
     padding: 13px;
-    height: 72vh;
+    height: max-content;
+}
+
+/* Header Contenedor Reviews */
+.container .right-section .review-container .review-header{
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+/* Titulo Header */
+.container .right-section .review-container .review-header h2{
+    color: var(--purple);
+}
+
+/* Estrella Header */
+.container .right-section .review-container .review-header i{
+    font-size: 20px;
+    color: goldenrod;
+}
+/* Linea Separacion Header */
+.container .right-section .review-container hr{
+    border: 1px solid var(--font-color);
 }
 
 /* Contenedor Review */
@@ -311,6 +335,11 @@ body{
     color: var(--font-color);
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+/* Espaciado Reviews (Ultima NO) */
+.container .right-section .review-container > *:not(:last-child){
+    margin-bottom: 10px;
 }
 
 /* Hover Review */
@@ -330,7 +359,7 @@ body{
 
 /* Estilo Estrellas */
 .container .right-section .review-container .review .right .stars i{
-    color: gold;
+    color: goldenrod;
 }
 
 /* Estilo Estrellas */
