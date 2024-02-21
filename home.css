@@ -8,6 +8,7 @@
     --light-grey: #919191;
     --purple: #7549C8;
     --font-color: white;
+    --container-color: #25252d;
 }
 
 /* Ajustes Generales */
@@ -51,7 +52,7 @@ body{
 
 /* Ajustes Barra Derechas del Menu */
 .container .sidebar{
-    height: 130vh;
+    height: 100%;
     background-color: var(--mid-grey);
     padding: 20px 36px;
     display: flex;
@@ -173,7 +174,7 @@ body{
 /* Estilo Tarjeta */
 .container main .card-container .card{
     display: flex;
-    background-color: #25252d;
+    background-color: var(--container-color);
     border-radius: 6px;
     padding: 26px;
     color: var(--font-color);
@@ -300,7 +301,7 @@ body{
 
 /* Contenedor Iconos */
 .container .right-section .profile .user .right{
-    background-color: #25252d;
+    background-color: var(--container-color);
     border-radius: 0 6px 6px 0;
     padding: 13px;
     color: var(--font-color);
@@ -310,7 +311,7 @@ body{
 .container .right-section .review-container {
     display: flex;
     flex-direction: column;
-    background-color: #25252d;
+    background-color: var(--container-color);
     border-radius: 6px;
     padding: 13px;
     height: max-content;

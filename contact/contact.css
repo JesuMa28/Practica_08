@@ -1,0 +1,116 @@
+/* Importamos el tipo de fuente de la pagina */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Variables Colores */
+:root {    
+    --dark-grey: #050505;    
+    --mid-grey: #18181d;
+    --light-grey: #919191;
+    --purple: #7549C8;
+    --font-color: white;
+    --container-color: #25252d;
+}
+
+/* Settings Generales */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Opciones Principales Body */
+html,
+body{
+    background: linear-gradient(var(--dark-grey), var(--mid-grey));
+    height: 100vh;
+}
+
+/* Ajustes Container Principal */
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajustes Container Sing-Up */
+.container .sing-up{
+    width: 13rem;
+    padding: 1.5rem;
+    background-color: var(--container-color);
+    border-radius: 6px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* Seccion Superior */
+.container .sing-up > *{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Imagen */
+.container .sing-up .top img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 3px solid #7549C8;
+}
+
+.container .sing-up .top h1{
+    color: var(--font-color);
+    font-size: 24px;
+}
+
+.container .sing-up .top p{
+    font-size: 12px;
+    color: #979797;
+    margin-bottom: 1rem;
+}
+
+.container .sing-up .mid .box{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 90%;
+    margin-bottom: 0.5rem;
+    background-color: #1d1d1d;
+    border: 1px solid #464748;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.container .sing-up .mid .box:hover{
+    border: 1px solid var(--purple);
+}
+
+.container .sing-up .mid .box input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--font-color);
+}
+
+.container .sing-up .bottom{
+    margin-top: 1rem;
+}
+
+.container .sing-up .bottom button{
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.container .sing-up .bottom button:hover{
+    scale: 1.01;
+    background-color: var(--purple);
+    color: var(--font-color);
+}
